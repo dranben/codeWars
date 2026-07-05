@@ -12,9 +12,11 @@
 function findAB (numbers, c) {
     for (let i = 0; i < numbers.length; i++ ) {
         for (let j = i+1; j < numbers.length; j++ ) {
-            if (j*i === c) {
-                return [i,j]
+            if (numbers[j]*numbers[i] === c) {
+                return [numbers[i],numbers[j]]
             }
+        
         }
     }
+    return null
 }
