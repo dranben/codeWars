@@ -15,7 +15,6 @@ function findAB (numbers, c) {
             if (numbers[j]*numbers[i] === c) {
                 return [numbers[i],numbers[j]]
             }
-        
         }
     }
     return null
